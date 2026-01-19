@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weimin Wang - Academic CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 60px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .research-interests {
+            background-color: #ecf0f1;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .research-interests h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .research-interests ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+        
+        .entry {
+            margin-bottom: 25px;
+        }
+        
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        
+        .institution {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+            white-space: nowrap;
+        }
+        
+        .description {
+            margin-left: 20px;
+            color: #555;
+        }
+        
+        .description p {
+            margin-bottom: 8px;
+        }
+        
+        ul {
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category h4 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .entry-header {
+                flex-direction: column;
+            }
+            
+            .date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weimin Wang</h1>
+            <p class="subtitle">MSc in Statistics and Data Science | CSC Scholar</p>
+            <div class="contact-info">
+                <span>📧 wangweimin456@gmail.com</span>
+                <span>|</span>
+                <span>📱 +31 613-143-423</span>
+                <span>|</span>
+                <a href="https://github.com/weimin" target="_blank">GitHub</a>
+                <span>|</span>
+                <a href="https://linkedin.com/in/weimin-wang" target="_blank">LinkedIn</a>
+            </div>
+            <div style="margin-top: 10px; color: #7f8c8d; font-size: 0.9em;">
+                <span>🇨🇳 Chinese National | Born: February 15, 1996</span>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I recently completed my Master's degree in Statistics and Data Science at Leiden University (August 2025). My academic background combines optical engineering with statistical methods and machine learning. During my master's program, I developed strong skills in statistical modeling, deep learning, and data analysis through coursework and hands-on projects. I have been awarded a CSC scholarship and am currently seeking PhD positions starting in 2026.</p>
+        </section>
+
+        <div class="research-interests">
+            <h3>Research Interests</h3>
+            <p style="line-height: 1.8; color: #555;">My research interests lie at the intersection of statistics and machine learning. I am particularly interested in statistical learning methods, deep learning applications, and causal inference. Through my coursework and projects, I have also gained experience in natural language processing, sequence modeling, and data mining techniques. I am eager to explore these areas further in a PhD program.</p>
+        </div>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Master of Science in Statistics and Data Science</h3>
+                        <p class="institution">Leiden University, Leiden, Netherlands</p>
+                    </div>
+                    <span class="date">Sep 2023 - Aug 2025</span>
+                </div>
+                <div class="description">
+                    <p><strong>Thesis:</strong> "Data-Enabled Predictive Control of Greenhouse Climate in Lettuce Production: A Comparative Study with Nonlinear MPC" (Grade: 7.5/10)</p>
+                    <p><strong>GPA:</strong> 8.28/10 (Excellent)</p>
+                    <p><strong>Key Coursework:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Statistical Learning (8.5/10), High-dimensional Data Analysis (9.5/10)</li>
+                        <li>Introduction to Deep Learning (8.5/10), Advances in Data Mining (8.5/10)</li>
+                        <li>Linear and Generalized Linear Models (9.0/10), Causal Inference (8.0/10)</li>
+                        <li>Bayesian Methods (8.0/10), Computational Statistics (7.0/10)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Master of Engineering in Optical Engineering</h3>
+                        <p class="institution">China Jiliang University, Zhejiang, China</p>
+                    </div>
+                    <span class="date">Sep 2017 - Jul 2020</span>
+                </div>
+                <div class="description">
+                    <p>Focus on laser beam shaping, fiber optics, and optical instrumentation</p>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Bachelor of Engineering in Optoelectronic Information Science</h3>
+                        <p class="institution">China Jiliang University, Zhejiang, China</p>
+                    </div>
+                    <span class="date">Sep 2013 - Jul 2017</span>
+                </div>
+                <div class="description">
+                    <p><strong>Honors:</strong> Outstanding Graduate of Zhejiang Province (Top 5%)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Projects and Research Experience</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Data-Enabled Predictive Control of Greenhouse Climate</h3>
+                        <p class="institution">Master's Thesis Project, Leiden University</p>
+                    </div>
+                    <span class="date">Feb 2025 - Aug 2025</span>
+                </div>
+                <div class="description">
+                    <p><strong>Tools:</strong> Python, R</p>
+                    <ul>
+                        <li>Developed predictive control algorithms for optimizing greenhouse climate in lettuce production</li>
+                        <li>Compared data-driven approaches with nonlinear model predictive control methods</li>
+                        <li>Applied statistical learning techniques to improve prediction accuracy and control efficiency</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Generative and Sequence Modelling for Multimodal Data</h3>
+                        <p class="institution">Course Project, Leiden University</p>
+                    </div>
+                    <span class="date">Sep 2024 - Dec 2024</span>
+                </div>
+                <div class="description">
+                    <p><strong>Tools:</strong> Python (PyTorch, TensorFlow)</p>
+                    <ul>
+                        <li>Implemented and evaluated various generative models for multimodal data processing</li>
+                        <li>Explored sequence-to-sequence architectures and their applications</li>
+                        <li>Gained hands-on experience with transformer-based models and attention mechanisms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Scalable User Pair Matching Using Locality Sensitive Hashing</h3>
+                        <p class="institution">Course Project, Leiden University</p>
+                    </div>
+                    <span class="date">Sep 2024 - Dec 2024</span>
+                </div>
+                <div class="description">
+                    <p><strong>Tools:</strong> Python</p>
+                    <ul>
+                        <li>Developed efficient algorithms for large-scale user matching problems</li>
+                        <li>Applied locality-sensitive hashing techniques to improve scalability</li>
+                        <li>Relevant to recommender systems and information retrieval applications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Exploring Regional Iron Accumulation in Alzheimer's Disease</h3>
+                        <p class="institution">Data Analysis Project, Leiden University</p>
+                    </div>
+                    <span class="date">Oct 2024 - Dec 2024</span>
+                </div>
+                <div class="description">
+                    <p><strong>Tools:</strong> R</p>
+                    <ul>
+                        <li>Performed statistical analysis on medical imaging data</li>
+                        <li>Applied mixed models and longitudinal data analysis techniques</li>
+                        <li>Investigated patterns and correlations in neuroimaging datasets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Causal Inference: Smoking Effects on Stroke Risk</h3>
+                        <p class="institution">Course Project, Leiden University</p>
+                    </div>
+                    <span class="date">Feb 2024 - Apr 2024</span>
+                </div>
+                <div class="description">
+                    <p><strong>Tools:</strong> R</p>
+                    <ul>
+                        <li>Applied causal inference methods to epidemiological data</li>
+                        <li>Employed propensity score matching and instrumental variable techniques</li>
+                        <li>Conducted sensitivity analysis to assess robustness of causal conclusions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Product Manager</h3>
+                        <p class="institution">H3C Technologies Co., Ltd, Beijing, China</p>
+                    </div>
+                    <span class="date">Jul 2020 - Aug 2022</span>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Translated customer needs into data-informed product requirements through collaboration with R&D teams</li>
+                        <li>Analyzed market and customer data to develop effective product bundling strategies</li>
+                        <li>Communicated analytical insights through conferences, media interviews, and marketing materials</li>
+                        <li>Gained valuable experience in data-driven decision making and stakeholder communication</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Laboratory Assistant</h3>
+                        <p class="institution">National Institute of Metrology, China, Beijing</p>
+                    </div>
+                    <span class="date">Aug 2018 - Dec 2019</span>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Assisted in construction of standard solar cell metering devices</li>
+                        <li>Designed and developed pulse-to-continuous light converter systems</li>
+                        <li>Conducted technical troubleshooting and problem-solving in laboratory environment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Conference Presentations</h2>
+            
+            <div class="entry">
+                <p><strong>Wang, W.</strong> (2019). "Femtosecond pulse laser beam shaping and power control." <em>International Conference on Optical Instruments and Technology (OIT 2019)</em>, Beijing, China.</p>
+            </div>
+            
+            <div class="entry">
+                <p><strong>Wang, W.</strong> (2019). "Optical fiber bundles converting pulsed lasers into continuous waves." <em>Applied Optics and Photonics China (AOPC 2019)</em>, Beijing, China.</p>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching Experience</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <h3>Teaching Assistant - Linear and Generalized Linear Models</h3>
+                        <p class="institution">Leiden University, Netherlands</p>
+                    </div>
+                    <span class="date">Oct 2024 - Dec 2024</span>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Led tutorial sessions and assisted students with coursework (8 weeks)</li>
+                        <li>Provided guidance on statistical modeling and R programming</li>
+                        <li>Graded assignments and offered detailed feedback to enhance student learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Honors and Awards</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span><strong>Outstanding Graduate of Zhejiang Province</strong></span>
+                    <span class="date">May 2017</span>
+                </div>
+                <p style="margin-left: 20px; color: #555;">Awarded to the top 5% of students at China Jiliang University</p>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span><strong>Zhejiang Provincial Government Scholarship</strong></span>
+                    <span class="date">Jun 2016</span>
+                </div>
+                <p style="margin-left: 20px; color: #555;">Awarded to the top 3% of students at China Jiliang University</p>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span><strong>First-Class Scholarship</strong></span>
+                    <span class="date">Oct 2015</span>
+                </div>
+                <p style="margin-left: 20px; color: #555;">Recognized as one of the top 3% of students at China Jiliang University</p>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span><strong>Exemplary Class Leader and Outstanding Student Award</strong></span>
+                    <span class="date">Oct 2014</span>
+                </div>
+                <p style="margin-left: 20px; color: #555;">Recognized for excellence in leadership and academics</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <p>Python (NumPy, SciPy, Pandas, Matplotlib, PyTorch, TensorFlow), R (tidyverse, ggplot2, caret)</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Machine Learning & Statistics</h4>
+                    <p>Statistical Learning, Deep Learning, Causal Inference, Bayesian Methods, High-dimensional Analysis</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <p>Chinese (Native), English (Proficient - IELTS 6.5)</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Software</h4>
+                    <p>Git, LaTeX, Markdown, Microsoft Office Suite, VSCode</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid #ddd; color: #7f8c8d;">
+            <p>Last Updated: January 2025</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:wangweimin456@gmail.com" style="color: #3498db;">📧 Contact me for collaboration opportunities</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                <em>CSC Scholar | Seeking PhD positions starting 2026</em>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
