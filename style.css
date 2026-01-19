@@ -10,21 +10,24 @@ body {
 }
 
 /* 顶部导航 */
-.top-nav {
+.top-nav{
   position: sticky;
   top: 0;
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding: 12px 40px;
+  padding: 12px 20px;
   z-index: 100;
+  text-align: center;   /* 新增：居中 */
 }
 
-.top-nav a {
-  margin-right: 20px;
+.top-nav a{
+  display: inline-block; /* 新增：保证居中排列更稳 */
+  margin: 0 14px;        /* 用左右 margin 代替 margin-right */
   text-decoration: none;
   color: #555;
   font-size: 0.95em;
 }
+
 
 /* 布局 */
 .layout {
@@ -35,10 +38,8 @@ body {
 }
 
 /* 左侧栏 */
-.sidebar {
-  width: 260px;
-  padding-right: 40px;
-}
+.sidebar { position: sticky; top: 70px; align-self: flex-start; }
+
 
 .avatar {
   width: 180px;
@@ -77,9 +78,7 @@ body {
 }
 
 /* 右侧内容 */
-.content {
-  flex: 1;
-}
+.content { max-width: 820px; }
 
 section {
   margin-bottom: 60px;
@@ -125,4 +124,15 @@ footer {
   padding-top: 20px;
   font-size: 0.85em;
   color: #777;
+}
+
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.skill-box{
+  font-size: 0.95em;
+  line-height: 1.5;
 }
