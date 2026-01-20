@@ -37,8 +37,24 @@ body {
   padding: 0 20px;
 }
 
-/* 左侧栏 */
-.sidebar { position: sticky; top: 70px; align-self: flex-start; }
+
+/* 左侧栏常驻 */
+.sidebar{
+  width: 300px;              /* 你可以 260~320 调 */
+  flex: 0 0 300px;
+  
+  padding-right: 48px; /* 左右栏之间更宽松 */
+  position: sticky;
+  top: 80px;                 /* 顶部导航高度 + 留白，建议 70~90 */
+  align-self: flex-start;    /* 很关键：防止 sticky 失效 */
+
+  height: fit-content;       /* 内容高度自适应 */
+}
+
+
+.links p{
+  margin: 0 0 10px 0;  /* 左侧每行信息之间留白 */
+}
 
 
 .avatar {
