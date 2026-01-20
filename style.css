@@ -9,32 +9,85 @@ body {
   background: #ffffff;
 }
 
-/* 顶部导航 */
-.top-nav {
+/* 顶部导航：左 Home + 中间菜单 */
+.top-nav{
   position: sticky;
   top: 0;
   background: #fff;
-  border-bottom: 2px solid #e8e8e8;  /* 稍微加粗边框 */
-  padding: 16px 20px;  /* 增加上下padding */
+  border-bottom: 2px solid #e8e8e8;
+  padding: 14px 0;
   z-index: 100;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);  /* 添加轻微阴影 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
 }
 
-.top-nav a {
-  display: inline-block;
-  margin: 0 16px;  /* 稍微增加间距 */
+/* 导航内部容器：让内容不贴边，和页面主体对齐 */
+.top-nav-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  gap: 34px;                    
+}
+
+/* Homepage：灰一点 + 加粗 */
+.nav-home{
+  color: #444;          /* 比其它链接更深的灰（其它是 #555） */
+  font-weight: 800;     /* 更粗：700~800 都自然 */
+  font-size: 1.05em;    /* 微微大一点 */
+  letter-spacing: 0.3px;/* 轻微字距，显得更“标题” */
+}
+
+
+
+
+/* 后面菜单：整体左对齐，等间距 */
+.nav-links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* ✅ 不居中 */
+  gap: 34px;                    /* ✅ 每个菜单项之间等间距（和上面保持一致最好） */
+
+  /* ✅ 关键：确保没有 flex:1 */
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 你的 hover 下划线效果保留：下面这段如已有可不改 */
+.top-nav a{
   text-decoration: none;
   color: #555;
   font-size: 0.95em;
-  font-weight: 500;  /* 稍微加粗 */
-  transition: color 0.2s ease;  /* 添加过渡效果 */
+  font-weight: 500;
+  padding: 6px 2px;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
-.top-nav a:hover {
-  color: #2c3e50;  /* 添加悬停效果 */
+.top-nav a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: #bdbdbd;
+  transition: width 0.18s ease, left 0.18s ease;
 }
 
+/* 悬停时显示下划线 */
+.top-nav a:hover{
+  color: #2c3e50;
+}
+.top-nav a:hover::after{
+  width: 100%;
+  left: 0;
+}
 
 
 /* 布局 */
